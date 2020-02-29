@@ -20,7 +20,7 @@ The bottom 5 performing schools have an overall passing rate 12% less than the d
 ![District_summary](PyCitySchools/Images/3.Bottom_performing_schools_(by_passing_rate)_table.PNG)
 
 
-### Math Scores by Grade**
+### Math Scores by Grade
 After grouping the average math scores by grade and school, it seems that there is no major difference between grades among the same school, but there is a difference between schools.
 
 <img src=PyCitySchools/Images/4.Math_scores_by_grade.PNG width=300> 
@@ -49,4 +49,4 @@ Finally, the grouping by school type shows that the charter schools have passing
 
 ### Conclusion
 
-The data shows that the spending per student has nothing to do with the performance of the school, but the large schools which are probably also district schools are lowering the overall passing rates. Moreover,.there is a big imbalance between math and reading scores for the district schools.
+The data shows that the spending per student has nothing to do with the performance of the school, but the large schools which are probably also district schools are lowering the overall passing rates. Moreover, there is a big imbalance between math and reading scores for the district schools.
