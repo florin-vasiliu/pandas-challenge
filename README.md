@@ -1,120 +1,52 @@
 # Academy of Py
 
-Well done! Having spent years analyzing financial records for big banks, you've finally scratched your idealistic itch and joined the education sector. In your latest role, you've become the Chief Data Scientist for your city's school district. In this capacity, you'll be helping the  school board and mayor make strategic decisions regarding future school budgets and priorities.
-As a first task, you've been asked to analyze the district-wide standardized test results. You'll be given access to every student's math and reading scores, as well as various information on the schools they attend. Your responsibility is to aggregate the data to and showcase obvious trends in school performance.
-Your final report should include each of the following:
-
 ### District Summary
+After computing the summary of the data given, it seems that there is a total of 15 schools in the district, with a total of 39,170 students which have an average overall passing rate of about 80[%]. Summary also shows that the average math score is slightly lower than the reading score, and the passing math rate is much smaller than the passing reading rate.
 
-- Create a high level snapshot (in table form) of the district's key metrics, including:
-  - Total Schools
-  - Total Students
-  - Total Budget
-  - Average Math Score
-  - Average Reading Score
-  - % Passing Math
-  - % Passing Reading
-  - Overall Passing Rate (Average of the above two)
-
-### School Summary
-
-- Create an overview table that summarizes key metrics about each school, including:
-
-  - School Name
-  - School Type
-  - Total Students
-  - Total School Budget
-  - Per Student Budget
-  - Average Math Score
-  - Average Reading Score
-  - % Passing Math
-  - % Passing Reading
-  - Overall Passing Rate (Average of the above two)
+![District_summary](PyCitySchools/Images/1.District_summary_table.PNG)
 
 
 
 
 ### Top Performing Schools (By Passing Rate)
+A further insight into the data shows that the top 5 performing schools have an overall passing rate 15% above the district average, and similar scores and passing rate between reading and math
 
-- Create a table that highlights the top 5 performing schools based on Overall Passing Rate. Include:
-
-  - School Name
-  - School Type
-  - Total Students
-  - Total School Budget
-  - Per Student Budget
-  - Average Math Score
-  - Average Reading Score
-  - % Passing Math
-  - % Passing Reading
-  - Overall Passing Rate (Average of the above two)
-
-
+![District_summary](PyCitySchools/Images/2.Top_performing_schools_(by_passing_rate)_table.PNG)
 
 
 ### Bottom Performing Schools (By Passing Rate)
+The bottom 5 performing schools have an overall passing rate 12% less than the district average, which means that the distribution of the total schools' overall passing rate might be skewed towards the high performing schools. Moreover, it seems to be an imbalance between the passing rate and scores between math and reading.
 
-- Create a table that highlights the bottom 5 performing schools based on Overall Passing Rate. Include all of the same metrics as above.
+![District_summary](PyCitySchools/Images/3.Bottom_performing_schools_(by_passing_rate)_table.PNG)
 
 
 ### Math Scores by Grade**
+After grouping the average math scores by grade and school, it seems that there is no major difference between grades among the same school, but there is a difference between schools.
 
-- Create a table that lists the average Math Score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
+<img src=PyCitySchools/Images/4.Math_scores_by_grade.PNG width=300> 
 
 ### Reading Scores by Grade
+Similar to the math grouping, we can draw the same conclusion.
 
-- Create a table that lists the average Reading Score for students of each grade level (9th, 10th, 11th, 12th) at each school.
+<img src=PyCitySchools/Images/5.Reading_scores_by_grade.PNG width=300 text=img1>
+
 
 
 ### Scores by School Spending
-
-- Create a table that breaks down school performances based on average Spending Ranges (Per Student). Use 4 reasonable bins to group school spending. Include in the table each of the following:
-
-  - Average Math Score
-  - Average Reading Score
-  - % Passing Math
-  - % Passing Reading
-  - Overall Passing Rate (Average of the above two)
-
-
-
+When considering the spending ranges per student, it seems that there is no improvement in the passing rate with the increase in spending, but the the contrary.
+<img src=PyCitySchools/Images/7.Scores_by_school_spending.PNG >
 
 ### Scores by School Size
+By taking the school size into account, the passing rate is much worse on large schools compared to medium and small.
 
-- Repeat the above breakdown, but this time group schools based on a reasonable approximation of school size (Small, Medium, Large).
-
+<img src=PyCitySchools/Images/6.Scores_by_school_size.PNG >
 
 ### Scores by School Type
 
-- Repeat the above breakdown, but this time group schools based on school type (Charter vs. District).
+Finally, the grouping by school type shows that the charter schools have passing rate much higher than the district schools, and that this seems to be due to the low math passing rate of the district schools.
 
-As final considerations:
+<img src=PyCitySchools/Images/8.Scores_by_school_type.PNG >
 
-- Use the pandas library and Jupyter Notebook.
-- You must submit a link to your Jupyter Notebook with the viewable Data Frames.
-- You must include a written description of at least two observable trends based on the data.
-- See Example Solution for a reference on the expected format.
+### Conclusion
 
-
-### Hints and Considerations
-
-
-- These are challenging activities for a number of reasons. For one, these activities will require you to analyze thousands of records. Hacking through the data to look for obvious trends in Excel is just not a feasible option. The size of the data may seem daunting, but pandas will allow you to efficiently parse through it.
-
-
-- Second, these activities will also challenge you by requiring you to learn on your feet. Don't fool yourself into thinking: "I need to study pandas more closely before diving in." Get the basic gist of the library and then immediately get to work. When facing a daunting task, it's easy to think: "I'm just not ready to tackle it yet." But that's the surest way to never succeed. Learning to program requires one to constantly tinker, experiment, and learn on the fly. You are doing exactly the right thing, if you find yourself constantly practicing Google-Fu and diving into documentation. There is just no way (or reason) to try and memorize it all. Online references are available for you to use when you need them. So use them!
-
-
-- Take each of these tasks one at a time. Begin your work, answering the basic questions: "How do I import the data?" "How do I convert the data into a DataFrame?" "How do I build the first table?" Don't get intimidated by the number of asks. Many of them are repetitive in nature with just a few tweaks. Be persistent and creative!
-
-
-- Expect these exercises to take time! Don't get discouraged if you find yourself spending  hours initially with little progress. Force yourself to deal with the discomfort of not knowing and forge ahead. Consider these hours an investment in your future!
-
-
-- As always, feel encouraged to work in groups and get help from your TAs and Instructor. Just remember, true success comes from mastery and not a completed homework assignment. So challenge yourself to truly succeed!
-
-
-
-### Copyright
-Trilogy Education Services © 2019. All Rights Reserved.
+The data shows that the spending per student has nothing to do with the performance of the school, but the large schools which are probably also district schools are lowering the overall passing rates. Moreover,.there is a big imbalance between math and reading scores for the district schools.
